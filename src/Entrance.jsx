@@ -1,5 +1,5 @@
 /** Users can enter their name to receive a token from the API. */
-import {useAuth} from "./AuthContext"
+import { useAuth } from "./AuthContext";
 
 export default function Entrance() {
   // TODO: call signup when form is submitted
