@@ -17,10 +17,10 @@ export function AuthProvider({ children }) {
           headers: {
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({credentials},)
+          body: JSON.stringify(credentials)
         });
 
-        const result = response.json();
+        const result = await response.json();
         setToken(result.token)
         setLocation("TABLET")
     }
